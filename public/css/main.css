@@ -1,0 +1,13 @@
+@import "./topmenu.css";
+@import './home.css';
+@import './aboutus.css';
+@import './propertydev.css';
+@import './footer.css';
+
+html, body {
+  height: 100%;
+  color: #1c1c1c;
+  background-color: #f8f8f8;
+  font-size: 17px;
+}
+

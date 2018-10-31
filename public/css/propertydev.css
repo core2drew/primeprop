@@ -1,0 +1,44 @@
+#PropertyDeveloper {
+  margin-bottom: 10rem;
+}
+
+#PropertyDeveloper > .title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+#PropertyDeveloper > .title:after {
+  height: 3px;
+  width: 50px;
+  background-color: #108738;
+  display: block;
+  content: "";
+  margin: auto;
+  position: relative;
+  top: 10px;
+}
+
+#PropertyDeveloper > .row > .developer > .ayalaland {
+  width: 75%
+}
+
+#PropertyDeveloper > .row > .developer > .rockwell {
+  width: 80%
+}
+
+#PropertyDeveloper > .row > .developer > .megaworld {
+  width: 85%
+}
+
+#PropertyDeveloper > .row > .developer > .torredelorenzo {
+  width: 35%;
+}
+
+#PropertyDeveloper > .row > .developer > .camaya {
+  width: 75%
+}
+
+#PropertyDeveloper > .row > .developer > .dcmi {
+  width: 100%;
+}

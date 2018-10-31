@@ -1,0 +1,18 @@
+
+#TopNavbar > .navbar-collapse > .navbar-nav > .nav-item {
+  border-bottom: 2px solid transparent;
+}
+
+#TopNavbar > .navbar-collapse > .navbar-nav > .nav-item:hover {
+  border-bottom: 2px solid green;
+}
+
+#TopNavbar > .navbar-collapse > .navbar-nav > .nav-item:nth-last-child(n + 2) {
+  margin-right: 30px;
+}
+
+#TopNavbar > .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
