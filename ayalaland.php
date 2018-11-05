@@ -74,7 +74,7 @@
             <li class="list-group-item">Dapibus ac facilisis in</li>
             <li class="list-group-item">Vestibulum at eros</li>
           </ul> -->
-          <a href="#" class="card-body action p-2 text-center text-uppercase font-weight-bold">
+          <a href="/propertyinfo.php" class="card-body action p-2 text-center text-uppercase font-weight-bold">
             <!-- <a href="#" class="card-link">Card link</a> -->
             View Property
           </a>
