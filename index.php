@@ -25,7 +25,7 @@
             <a class="nav-link" href="/">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">Ayala Land</a>
+            <a class="nav-link" href="/ayalaland.php">Ayala Land</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Rockwell</a>
