@@ -1,0 +1,38 @@
+#Properties {
+  margin-top: 7em;
+  min-height: 100%;
+  padding-bottom: 52px;
+}
+
+#Properties > #PropertyType > .types > .nav {
+  background-color: #108738;
+}
+
+#Properties > #PropertyType > .types > .nav > .nav-item {
+  color: #fff;
+}
+
+#Properties > #PropertyType > .types > .nav > .nav-item.active {
+  background-color: #006837;
+}
+
+#Properties > .properties-detail > .types > .nav {
+  background-color: #006837;
+}
+
+#Properties > .properties-detail > .types > .nav > .nav-item {
+  color: #fff;
+}
+
+#Properties > .properties-detail > .types > .nav > .nav-item.active {
+  background-color: #108738;
+}
+
+#Properties > .properties-detail > .property > .card > .action{
+  background-color: #108738;
+  color: #fff;
+}
+
+#Properties > .properties-detail > .property > .card > .action:hover {
+  text-decoration: none;
+}

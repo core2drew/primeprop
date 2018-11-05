@@ -12,9 +12,9 @@
 </head>
 <body>
   <div class="container-fluid px-0 h-100">
-    <nav id="TopNavbar" class="navbar navbar-light navbar-expand-lg fixed-top">
-      <a class="navbar-brand" href="#">
-        <img src="public/images/prime_logo.svg" width="150px" height="80px" alt="">
+    <nav id="TopNavbar" class="navbar navbar-light navbar-expand-lg fixed-top py-0">
+      <a class="navbar-brand py-0" href="#">
+        <img  id="NavbarBrand" src="public/images/prime_logo.svg" width="150px" height="80px" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -104,7 +104,6 @@
   </div>
   <footer id="Footer" class="d-flex align-items-center container-fluid py-2">
     <small>&copy; 2019 All rights reserved</small>
-
     <div id="SocialMedia" class="d-flex align-items-center ml-auto">
       <small class="mr-3">Connect with Us</small>
       <a class="icon d-inline-block mr-2" href="http://facebook.com" target="_blank">

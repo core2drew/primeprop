@@ -1,10 +1,9 @@
-
 #TopNavbar > .navbar-collapse > .navbar-nav > .nav-item {
   border-bottom: 2px solid transparent;
 }
 
 #TopNavbar > .navbar-collapse > .navbar-nav > .nav-item:hover {
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #108738;
 }
 
 #TopNavbar > .navbar-collapse > .navbar-nav > .nav-item:nth-last-child(n + 2) {
@@ -15,4 +14,37 @@
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#TopNavbar.scrolled, 
+#TopNavbar.developer {
+  background-color: #fff;
+  box-shadow: 0px 4px 15px -8px #000;
+  align-items: stretch;
+}
+
+#TopNavbar.scrolled > .navbar-collapse, 
+#TopNavbar.developer > .navbar-collapse {
+  align-items: stretch;
+}
+
+#TopNavbar.scrolled > .navbar-collapse > .navbar-nav > .nav-item, 
+#TopNavbar.developer > .navbar-collapse > .navbar-nav > .nav-item {
+  display: flex;
+  align-items: center;
+}
+
+#TopNavbar.scrolled > .navbar-collapse > .navbar-nav > .nav-item:hover, 
+#TopNavbar.developer > .navbar-collapse > .navbar-nav > .nav-item:hover {
+  background-color: #108738;
+}
+
+#TopNavbar.scrolled > .navbar-collapse > .navbar-nav > .nav-item:hover > .nav-link, 
+#TopNavbar.developer > .navbar-collapse > .navbar-nav > .nav-item:hover > .nav-link {
+  color: #fff;
+}
+
+#TopNavbar.scrolled > .navbar-collapse > .navbar-nav > .nav-item > .nav-link, 
+#TopNavbar.developer > .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+  color: #108738;
 }
