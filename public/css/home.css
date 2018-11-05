@@ -1,6 +1,7 @@
 #Home {
   background-image: url('/public/images/makati-skyline.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #Home > .container > h1 {
