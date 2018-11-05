@@ -12,7 +12,7 @@
 </head>
 <body>
   <nav id="TopNavbar" class="navbar navbar-light navbar-expand-lg fixed-top py-0 developer">
-    <a class="navbar-brand py-0" href="#">
+    <a class="navbar-brand py-0" href="http://www.primepropertiesphilippines.com">
       <img  id="NavbarBrand" src="public/images/prime_logo_secondary.svg" width="150px" height="80px" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
