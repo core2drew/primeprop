@@ -9,13 +9,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="http://www.primepropertiesphilippines.com">About Us</a>
+          <a class="nav-link" href="/">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://www.primepropertiesphilippines.com/ayalaland.php">Ayala Land</a>
+          <a class="nav-link" href="/ayalaland">Ayala Land</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Rockwell</a>
+          <a class="nav-link" href="/">Rockwell</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,9 +39,10 @@
 <script>
 export default {
   name: 'TopMenu',
+  props: ['staticLogo', 'isDeveloperPage'],
   data () {
     return {
-      logo: require('../assets/prime_logo.svg')
+      logo: this.staticLogo ? this.staticLogo : require('../assets/prime_logo.svg')
     }
   },
   methods: {
@@ -57,7 +58,9 @@ export default {
     }
   },
   mounted () {
-    window.addEventListener('scroll', this.handleScroll)
+    if (!this.isDeveloperPage) {
+      window.addEventListener('scroll', this.handleScroll)
+    }
   }
 }
 </script>

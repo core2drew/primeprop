@@ -3,24 +3,24 @@
     <h3 class="title mb-5">Property Developer</h3>
     <div class="row w-75 mx-auto mb-5">
       <div class="developer col-lg-4 d-flex justify-content-center align-items-center">
-        <img class="ayalaland" src="../assets/propertydevlopers/ayala-land.png" alt="Ayala Land"/>
+        <img class="ayalaland" src="../../assets/propertydevlopers/ayala-land.png" alt="Ayala Land"/>
       </div>
       <div class="developer col-lg-4 d-flex justify-content-center align-items-center">
-        <img class="rockwell" src="../assets/propertydevlopers/rockwell.png" alt="rockwell"/>
+        <img class="rockwell" src="../../assets/propertydevlopers/rockwell.png" alt="rockwell"/>
       </div>
       <div class="developer col-lg-4 d-flex justify-content-center align-items-center">
-        <img class="megaworld" src="../assets/propertydevlopers/mega-world.png" alt="Mega World"/>
+        <img class="megaworld" src="../../assets/propertydevlopers/mega-world.png" alt="Mega World"/>
       </div>
     </div>
     <div class="row w-75 mx-auto">
       <div class="developer col-lg-4 d-flex justify-content-center align-items-center">
-        <img class="torredelorenzo" src="../assets/propertydevlopers/torre-de-lorenzo.png" alt="Torre De Lorenzo"/>
+        <img class="torredelorenzo" src="../../assets/propertydevlopers/torre-de-lorenzo.png" alt="Torre De Lorenzo"/>
       </div>
       <div class="developer col-lg-4 d-flex justify-content-center align-items-center">
-        <img class="camaya" src="../assets/propertydevlopers/camaya.png" alt="Camaya"/>
+        <img class="camaya" src="../../assets/propertydevlopers/camaya.png" alt="Camaya"/>
       </div>
       <div class="developer col-lg-4 d-flex justify-content-center align-items-end">
-        <img class="dcmi" src="../assets/propertydevlopers/dcmi.png" alt="DCMI"/>
+        <img class="dcmi" src="../../assets/propertydevlopers/dcmi.png" alt="DCMI"/>
       </div>
     </div>
   </div>

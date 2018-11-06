@@ -9,13 +9,13 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Welcome'
 }
 </script>
 
 <style>
 #Home {
-  background-image: url('../assets/makati-skyline.jpg');
+  background-image: url('../../assets/makati-skyline.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
