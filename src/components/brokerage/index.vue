@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid px-0 h-100">
-    <TopMenu v-bind:class="{ developer: isDeveloperPage}" v-bind:staticLogo="logo" v-bind:isDeveloperPage="isDeveloperPage"/>
-    <Properties />
-    <Footer />
-  </div>
+    <div class="container-fluid px-0 h-100">
+      <TopMenu v-bind:class="{ developer: isDeveloperPage}" v-bind:staticLogo="logo" v-bind:isDeveloperPage="isDeveloperPage"/>
+      <Properties />
+      <Footer />
+    </div>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ import TopMenu from '../TopMenu'
 import Footer from '../Footer'
 import Properties from './Properties'
 export default {
-  name: 'DevProperties',
+  name: 'Brokerage',
   components: {
     TopMenu,
     Properties,

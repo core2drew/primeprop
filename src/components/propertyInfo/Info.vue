@@ -2,13 +2,13 @@
   <div id="PropertyInfo" class="container p-4">
     <div class="row">
       <div class="col">
-        <h2 class="h2 title">Celadon Park</h2>
+        <h2 class="h2 title">Parklinks</h2>
       </div>
     </div>
     <div class="row">
       <div id="PropertyGallery" class="col-4">
         <div class="card">
-          <img class="card-img-top" src="../../assets/properties/ayalaland/sample1.jpg" alt="Card image cap">
+          <img class="card-img-top" src="../../assets/properties/ayalaland/premier/parklinks.jpg" alt="Parklinks">
           <a href="#" class="card-body action p-2 text-center">
             View Gallery
           </a>
@@ -78,7 +78,7 @@
 
 <script>
 export default {
-  name: 'PropertyInfo'
+  name: 'Info'
 }
 </script>
 

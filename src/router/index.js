@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home'
-import Developer from '@/components/developer'
-import Info from '@/components/propertyinfo'
+import Brokerage from '@/components/brokerage'
+import DevProperties from '@/components/developer'
+import PropertyInfo from '@/components/propertyInfo'
 
 Vue.use(Router)
 
@@ -14,14 +15,20 @@ export default new Router({
       component: Home
     },
     {
-      path: '/ayalaland',
-      name: 'Ayalaland',
-      component: Developer
+      path: '/brokerage',
+      name: 'Brokerage',
+      component: Brokerage
     },
     {
-      path: '/ayalaland/celadon',
-      name: 'PropertyInfo',
-      component: Info
+      path: '/ayalaland/premier',
+      name: 'AyalalandPremier',
+      component: DevProperties
+    },
+    {
+      path: '/ayalaland/premier/parklinks',
+      name: 'Parklinks',
+      component: PropertyInfo
     }
-  ]
+  ],
+  mode: 'history'
 })

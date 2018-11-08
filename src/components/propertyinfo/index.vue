@@ -1,21 +1,21 @@
 <template>
-    <div class="container-fluid px-0 h-100">
-      <TopMenu v-bind:class="{ developer: isDeveloperPage}" v-bind:staticLogo="logo" v-bind:isDeveloperPage="isDeveloperPage"/>
-      <PropertyInfo />
-      <Footer />
-    </div>
+  <div class="container-fluid px-0 h-100">
+    <TopMenu v-bind:class="{ developer: isDeveloperPage}" v-bind:staticLogo="logo" v-bind:isDeveloperPage="isDeveloperPage"/>
+    <Info />
+    <Footer />
+  </div>
 </template>
 
 <script>
 import TopMenu from '../TopMenu'
 import Footer from '../Footer'
-import PropertyInfo from './PropertyInfo'
+import Info from './Info'
 export default {
-  name: 'Info',
+  name: 'PropertyInfo',
   components: {
     TopMenu,
-    PropertyInfo,
-    Footer
+    Footer,
+    Info
   },
   data () {
     return {

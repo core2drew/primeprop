@@ -11,25 +11,35 @@
         <li class="nav-item active">
           <a class="nav-link" href="/">About Us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/#/ayalaland">Ayala Land</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/">Rockwell</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ayala Land
+          </a>
+          <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/ayalaland/premier">Ayala Land Premier</a>
+            <a class="dropdown-item" href="#">Alveo</a>
+            <a class="dropdown-item" href="#">Avida</a>
+            <a class="dropdown-item" href="#">Amaia</a>
+            <a class="dropdown-item" href="#">BellaVita</a>
+          </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Other Developers
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Rockwell</a>
+            <a class="dropdown-item" href="#">Mega World</a>
+            <a class="dropdown-item" href="#">Torre Lorenzo</a>
+            <a class="dropdown-item" href="#">Camaya Coast</a>
+            <a class="dropdown-item" href="#">DMCI</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Brokerage</a>
+          <a class="nav-link" href="/brokerage">Brokerage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Announcement</a>
         </li>
       </ul>
     </div>
