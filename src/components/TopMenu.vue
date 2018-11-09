@@ -9,18 +9,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="/">About Us</a>
+          <router-link to="/" class="nav-link">About Us</router-link>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Ayala Land
           </a>
           <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/ayalaland/premier">Ayala Land Premier</a>
-            <a class="dropdown-item" href="#">Alveo</a>
-            <a class="dropdown-item" href="#">Avida</a>
-            <a class="dropdown-item" href="#">Amaia</a>
-            <a class="dropdown-item" href="#">BellaVita</a>
+            <router-link to="/developer/ayalaland/premier" class="dropdown-item">Ayala Land Premier</router-link>
+            <router-link to="#" class="dropdown-item">Alveo</router-link>
+            <router-link to="#" class="dropdown-item">Avida</router-link>
+            <router-link to="#" class="dropdown-item">Amaia</router-link>
+            <router-link to="#" class="dropdown-item">Bella Vita</router-link>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -36,10 +36,10 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/brokerage">Brokerage</a>
+          <router-link to="#" class="nav-link">Brokerage</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Announcement</a>
+          <router-link to="#" class="nav-link">Announcement</router-link>
         </li>
       </ul>
     </div>

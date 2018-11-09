@@ -1,33 +1,40 @@
 <template>
-   <div id="Properties" class="container-fluid mb-3">
-    <div class="properties-detail row mt-3">
-      <div class="property col-3">
-        <div class="card">
-          <img class="card-img-top" src="../../assets/properties/ayalaland/premier/parklinks.jpg" alt="Parklinks">
-          <div class="card-body">
-            <h5 class="card-title">Parklinks</h5>
-            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-            <p class="mb-0">Santa Cruz, Manila Metro Manila, Philippines</p>
-            <p class="mb-0">Starts at P2.2M</p>
-          </div>
-          <!-- <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul> -->
-          <a href="/ayalaland/premier/parklinks" class="card-body action p-2 text-center text-uppercase font-weight-bold">
-            <!-- <a href="#" class="card-link">Card link</a> -->
-            View Property
-          </a>
-        </div>
-      </div>
-    </div>
+  <div id="Properties" class="container-fluid mb-3">
+    <h3 class="text-capitalize">{{getTitle}}</h3>
+    <PropertyDetail v-bind:properties="getProperties"/>
   </div>
 </template>
 
 <script>
+import PropertyDetail from './PropertyDetail'
 export default {
-  name: 'Properties'
+  name: 'Properties',
+  components: {
+    PropertyDetail
+  },
+  data: function () {
+    return {
+      developerNames: {
+        'ayalaland': 'Ayala Land',
+        'rockwell': 'Rockwell',
+        'megaworld': 'Megaworld'
+      }
+    }
+  },
+  props: ['developers'],
+  computed: {
+    getProperties: function () {
+      let developer = this.$route.params.developer
+      let project = this.$route.params.project
+      return this.developers[developer][project]
+    },
+    getTitle: function () {
+      let developer = this.$route.params.developer
+      let project = this.$route.params.project
+      let title = `${this.developerNames[developer]} ${project}`
+      return title
+    }
+  }
 }
 </script>
 

@@ -2,13 +2,13 @@
   <div id="PropertyInfo" class="container p-4">
     <div class="row">
       <div class="col">
-        <h2 class="h2 title">Parklinks</h2>
+        <h2 class="h2 title">{{propertyInfo.title}}</h2>
       </div>
     </div>
     <div class="row">
       <div id="PropertyGallery" class="col-4">
         <div class="card">
-          <img class="card-img-top" src="../../assets/properties/ayalaland/premier/parklinks.jpg" alt="Parklinks">
+          <img class="card-img-top" v-bind:src="propertyInfo.featureImage.url" alt="Parklinks">
           <a href="#" class="card-body action p-2 text-center">
             View Gallery
           </a>
@@ -18,7 +18,7 @@
         <div class="row flex-column mb-3 no-gutters">
           <div id="Address" class="col-lg-12">
             <h3 class="title h5 text-uppercase">Location</h3>
-            <p class="m-0">Felix Huertas St., Barangay 350, Zone 35, Sta. Cruz, Manila</p>
+            <p class="m-0">{{propertyInfo.location}}</p>
             <a id="GoogleMap" href="#" class="btn btn-success">Google Map</a>
           </div>
         </div>
@@ -78,7 +78,22 @@
 
 <script>
 export default {
-  name: 'Info'
+  name: 'PropertyInfo',
+  props: ['developers'],
+  computed: {
+    propertyInfo: function () {
+      let developer = this.$route.params.developer
+      let project = this.$route.params.project
+      let property = this.$route.params.property
+
+      return this.developers[developer][project].reduce((acc, cur) => {
+        if (cur.name === property) {
+          return {...acc, ...cur}
+        }
+        return acc
+      }, {})
+    }
+  }
 }
 </script>
 
