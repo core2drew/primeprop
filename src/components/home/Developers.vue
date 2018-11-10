@@ -12,15 +12,12 @@
         <img class="megaworld" src="../../assets/propertydevlopers/mega-world.png" alt="Mega World"/>
       </div>
     </div>
-    <div class="row w-75 mx-auto">
+    <div class="row w-75 mx-auto justify-content-center">
       <div class="developer col-lg-4 d-flex justify-content-center align-items-center">
         <img class="torredelorenzo" src="../../assets/propertydevlopers/torre-de-lorenzo.png" alt="Torre De Lorenzo"/>
       </div>
       <div class="developer col-lg-4 d-flex justify-content-center align-items-center">
         <img class="camaya" src="../../assets/propertydevlopers/camaya.png" alt="Camaya"/>
-      </div>
-      <div class="developer col-lg-4 d-flex justify-content-center align-items-end">
-        <img class="dcmi" src="../../assets/propertydevlopers/dcmi.png" alt="DCMI"/>
       </div>
     </div>
   </div>

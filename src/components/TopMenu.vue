@@ -23,6 +23,9 @@
             <router-link to="#" class="dropdown-item">Bella Vita</router-link>
           </div>
         </li>
+        <li class="nav-item">
+          <router-link to="#" class="nav-link">Brokerage</router-link>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Other Developers
@@ -32,11 +35,7 @@
             <a class="dropdown-item" href="#">Mega World</a>
             <a class="dropdown-item" href="#">Torre Lorenzo</a>
             <a class="dropdown-item" href="#">Camaya Coast</a>
-            <a class="dropdown-item" href="#">DMCI</a>
           </div>
-        </li>
-        <li class="nav-item">
-          <router-link to="#" class="nav-link">Brokerage</router-link>
         </li>
         <li class="nav-item">
           <router-link to="#" class="nav-link">Announcement</router-link>
