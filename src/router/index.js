@@ -4,7 +4,7 @@ import Home from '@/components/home'
 import Brokerage from '@/components/brokerage'
 import Developer from '@/components/developer'
 import Properties from '@/components/developer/Properties'
-import PropertyInfo from '@/components/developer/propertyInfo'
+import PropertyInfo from '@/components/developer/PropertyInfo'
 
 Vue.use(Router)
 
