@@ -7,7 +7,7 @@ import Projects from '@/components/developer/Projects'
 import ProjectDetails from '@/components/developer/ProjectDetails'
 
 Vue.use(Router)
-
+console.log('test')
 export default new Router({
   routes: [
     {
