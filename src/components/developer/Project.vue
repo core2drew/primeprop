@@ -1,6 +1,6 @@
 <template>
   <div class="properties-detail row mt-3">
-    <div class="property col-3" v-for="(project, key) in projects" v-bind:key="key">
+    <div class="property col-3 mb-3" v-for="(project, key) in projects" v-bind:key="key">
       <div class="card">
         <img class="card-img-top" v-bind:src="project.featureImage.url" v-bind:alt="project.featureImage.alt">
         <div class="card-body">

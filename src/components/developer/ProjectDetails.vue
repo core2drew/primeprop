@@ -15,13 +15,13 @@
         </div>
       </div>
       <div id="ProjectInfo" class="col-7">
-        <div v-if="projectDetails.hasOwnProperty('location')" class="row flex-column mb-3 no-gutters">
+        <div v-if="projectDetails.hasOwnProperty('address')" class="row flex-column mb-3 no-gutters">
           <div id="Address" class="detail col-lg-12">
             <h3 class="title h5 text-uppercase d-flex align-item-center justify-content-between">
               Location
               <a id="GoogleMap" v-bind:href="projectDetails.googleMap" target="_blank">View Google Map</a>
             </h3>
-            <p class="mb-1">{{projectDetails.location}}</p>
+            <p class="mb-1">{{projectDetails.address}}</p>
           </div>
         </div>
         <div v-if="projectDetails.hasOwnProperty('overview')" class="row flex-column mb-3 no-gutters">
@@ -39,44 +39,19 @@
         <div v-if="projectDetails.hasOwnProperty('unitRange')" class="row flex-column mb-3 no-gutters">
           <div id="UnitRange" class="detail col-lg-12">
             <h3 class="title h5 text-uppercase">Unit Range</h3>
-            <div class="description" v-html="projectDetails.unitRange">
-              <!-- Template -->
-              <p class="note">(approx. sizes only)</p>
-              <ul class="list-unstyled">
-                <li>Studio Unit: 24-40 sq.m.</li>
-                <li>One-Bedroom Unit: 49-85 sq.m.</li>
-                <li>Two-Bedroom Unit: 69-70 sq.m.</li>
-              </ul>
-            </div>
+            <div class="description" v-html="projectDetails.unitRange"></div>
           </div>
         </div>
-        <div v-if="projectDetails.hasOwnProperty('featureAmenities')" class="row flex-column mb-3 no-gutters">
-          <!-- Template -->
-          <div id="FeatureAmenities" class="detail col-lg-12">
-            <h3 class="title h5 text-uppercase">Feature & Amenities</h3>
-            <h4 class="sub-title h6">Outdoor Amenities</h4>
-            <ul class='amenities-list'>
-              <li>25-meter Swimming Pool</li>
-              <li>Children's Pool</li>
-              <li>Lounge Pool</li>
-              <li>Private Massage Cabanas</li>
-              <li>Jacuzzi and Sauna</li>
-              <li>Garden Sitting Areas</li>
-              <li>Barbeque and Grilling Area</li>
-              <li>Wooden Lounge Deck</li>
-              <li>Exercise Lawn</li>
-              <li>Viewing Deck</li>
-              <li>Meditation Garden</li>
-              <li>Full-sized Basketball and Multi-purpose Court</li>
-            </ul>
-
-            <h4 class="sub-title h6">Indoor Amenities</h4>
-            <ul class='amenities-list'>
-              <li>Function Rooms</li>
-              <li>Children's Activity Area</li>
-              <li>Gym and Fitness Center</li>
-              <li>Game Room</li>
-            </ul>
+        <div v-if="projectDetails.hasOwnProperty('priceRange')" class="row flex-column mb-3 no-gutters">
+          <div id="PriceRanage" class="detail col-lg-12">
+            <h3 class="title h5 text-uppercase">Price Range</h3>
+            <div class="description" v-html="projectDetails.priceRange"></div>
+          </div>
+        </div>
+        <div v-if="projectDetails.hasOwnProperty('amenities')" class="row flex-column mb-3 no-gutters">
+          <div id="Amenities" class="detail col-lg-12">
+            <h3 class="title h5 text-uppercase">Amenities</h3>
+            <div class="description" v-html="projectDetails.amenities"></div>
           </div>
         </div>
       </div>
@@ -136,7 +111,8 @@ export default {
   text-decoration: none;
 }
 
-#ProjectDetails > .row > #ProjectInfo > .row > #FeatureAmenities > .amenities-list {
+#ProjectDetails > .row > #ProjectInfo > .row > #Amenities > .description > ul{
+  padding-left: 18px;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
