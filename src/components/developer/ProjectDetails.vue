@@ -50,7 +50,7 @@
         </div>
         <div v-if="projectDetails.hasOwnProperty('amenities')" class="row flex-column mb-3 no-gutters">
           <div id="Amenities" class="detail col-lg-12">
-            <h3 class="title h5 text-uppercase">Amenities</h3>
+            <h3 class="title h5 text-uppercase">Feature and Amenities</h3>
             <div class="description" v-html="projectDetails.amenities"></div>
           </div>
         </div>

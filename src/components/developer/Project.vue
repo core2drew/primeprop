@@ -8,7 +8,7 @@
           <p class="mb-0">{{project.location}}</p>
           <p class="mb-0" v-if="project.hasOwnProperty('price')">{{project.price}}</p>
         </div>
-        <router-link v-bind:to="`premier/${project.name}`" class="card-body action p-2 text-center text-uppercase font-weight-bold">
+        <router-link v-bind:to="`${property}/${project.name}`" class="card-body action p-2 text-center text-uppercase font-weight-bold">
           View Property
         </router-link>
       </div>
@@ -19,7 +19,7 @@
 <script>
 export default {
   name: 'Project',
-  props: ['projects']
+  props: ['projects', 'property']
 }
 </script>
 

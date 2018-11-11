@@ -1,7 +1,7 @@
 <template>
   <div id="Projects" class="container-fluid mb-3">
-    <h3 class="text-capitalize">{{getTitle}}</h3>
-    <Project v-bind:projects="getProjects"/>
+    <h3 class="text-capitalize">{{getPropertyTitle}}</h3>
+    <Project v-bind:projects="getProjects" v-bind:property="property"/>
   </div>
 </template>
 
@@ -14,10 +14,11 @@ export default {
   },
   data: function () {
     return {
-      developerNames: {
-        'ayalaland': 'Ayala Land',
-        'rockwell': 'Rockwell',
-        'megaworld': 'Megaworld'
+      propertyName: {
+        ayalaland: {
+          premier: 'Ayala Land Premier',
+          alveo: 'Alveo'
+        }
       }
     }
   },
@@ -28,11 +29,13 @@ export default {
       let property = this.$route.params.property
       return this.developers[developer][property]
     },
-    getTitle: function () {
+    getPropertyTitle: function () {
       let developer = this.$route.params.developer
       let property = this.$route.params.property
-      let title = `${this.developerNames[developer]} ${property}`
-      return title
+      return this.propertyName[developer][property]
+    },
+    property: function() {
+      return this.$route.params.property
     }
   }
 }

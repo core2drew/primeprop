@@ -17,7 +17,7 @@
           </a>
           <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
             <router-link to="/developer/ayalaland/premier" class="dropdown-item">Ayala Land Premier</router-link>
-            <router-link to="#" class="dropdown-item">Alveo</router-link>
+            <router-link to="/developer/ayalaland/alveo" class="dropdown-item">Alveo</router-link>
             <router-link to="#" class="dropdown-item">Avida</router-link>
             <router-link to="#" class="dropdown-item">Amaia</router-link>
             <router-link to="#" class="dropdown-item">Bella Vita</router-link>
