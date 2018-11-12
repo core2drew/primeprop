@@ -1,7 +1,7 @@
 <template>
   <nav id="TopNavbar" class="navbar navbar-light navbar-expand-lg fixed-top py-0">
     <a class="navbar-brand py-0" href="http://www.primepropertiesphilippines.com">
-      <img id="NavbarBrand" v-bind:src="logo" width="150px" height="80px" alt="">
+      <img id="NavbarBrand" v-bind:src="logo" width="150px" height="80px" alt="primepropertiesphilippines-logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
